@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    int i = 0;
+    Scanner scanner = new Scanner (System.in);
+		System.out.println("LOL");
+		System.out.println("type 1 or 2 or 3 or 4 or 5 or 6 etc etc etc");
+		System.out.println("For Greeting....");
+		{
+	i = scanner.nextInt ();
+    	if (i == 1)
+	  {
+	    System.out.println ("Hi Gay");
+	  }
+	    else if (i == 2)
+	  {
+	    System.out.println ("Hello");
+	  }
+    	else if (i == 3)
+	  {
+	    System.out.println ("HAHAHAHA");
+	  }
+	    else if (i == 4)
+	  {
+	    System.out.println ("invlid");
+	    
+	    if (i == 5)
+	  {
+	    System.out.println ("Gay");
+	  }
+	    else if (i == 6)
+	  {
+	    System.out.println ("AIIEEE");
+	  }
+    	else if (i == 7)
+	  {
+	    System.out.println ("AHHHHHHHH");
+	  }
+	    else if (i == 8)
+	  {
+	    System.out.println ("No one here lalalala");
+	  }
+	    else
+	  {
+	    System.out.println ("Invalid number pls try again");
+	  }
+      }
+    scanner.close ();
+  }
+}
+}
