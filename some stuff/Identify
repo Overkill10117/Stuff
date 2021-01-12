@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your year of birth: ");
+
+        boolean hasNextInt = scanner.hasNextInt();
+
+        if (hasNextInt){
+            int yearOfBirth = scanner.nextInt();
+            scanner.nextLine();
+
+            System.out.println("Enter your name: ");
+            String name = scanner.nextLine();
+            int age = 2020 - yearOfBirth;
+
+            if (age >= 0 && age <= 100) {
+                System.out.println("Your name is " + name + ", and you are " + age + " years old.");
+            } else {
+                System.out.println("Invalid year of birth, unless your an alien.");
+
+                System.out.println("Are you an alien? True or false");
+                boolean areYouAnAlien = scanner.nextBoolean();
+
+                if (areYouAnAlien) {
+                    System.out.println("Wow you are an alien...");
+
+                    System.out.println("Are you the old man: True or false");
+                    boolean yearOfBirthForAlien = scanner.nextBoolean();
+                    scanner.nextLine();
+
+                    if (yearOfBirthForAlien) {
+                        System.out.println("You are an alien, and you are the old man SMALL AND KUBA");
+                    } else {
+                        System.out.println("Very funny old man");
+                    }
+                } else {
+                    System.out.println("Well lucky you, you are a plain being");
+                }
+            }
+        } else {
+            System.out.println("Unable to solve year of birth");
+        }
+
+        scanner.close();
+    }
+}
