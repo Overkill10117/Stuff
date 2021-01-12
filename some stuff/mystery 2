@@ -1,0 +1,65 @@
+import java.util.*;
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    int i = 0;
+    Scanner scanner = new Scanner (System.in);
+      System.out.println ("The president deid");
+      System.out.println ("there are 5 suspects");
+      System.out.println ("Suspect 1: bystander");
+      System.out.println ("He said he was bystanding......");
+      System.out.println ("Suspect 2: Vice president");
+      System.out.println ("He said he is in his office.");
+       System.out.println ("Suspect 3: Secretary");
+      System.out.println ("He said he was in Vice's office."); 
+       System.out.println ("Suspect 4: guard");
+      System.out.println ("He said he is walking around."); 
+      System.out.println ("Suspect 5: A GAY.");
+      System.out.println ("He said he/She is annoyed.");
+      System.out.println ("type suspect number.");
+    while (true)
+      {
+	i = scanner.nextInt ();
+
+	if (i == 1)
+	  {
+	    System.out.println ("Entered number is 1, you were wrong and got executed due to false blame");
+	    break;
+	  }
+	else if (i == 2)
+	  {
+	    System.out.println
+	      ("Entered number is 2, you were wrong and got executed due to false blame");
+	    break;
+	  }
+	else if (i == 3)
+	  {
+	    System.out.println ("Entered number is 3, you got it right");
+	    break;
+	  }
+
+	else if (i == 4)
+	  {
+	    System.out.println ("Entered number is 4, you were wrong and got executed due to false blame");
+	    break;
+	  }
+	  else if (i == 5)
+	  {
+	    System.out.println ("Entered number is 5, you were wrong and got executed due to false blame");
+	    break;
+	  }
+	else
+	  {
+	    System.out.println ("Invalid thing or what ever pls try again");
+	  }
+      }
+    scanner.close ();
+  }
+}
+
+
+
+
