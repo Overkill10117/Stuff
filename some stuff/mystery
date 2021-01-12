@@ -1,0 +1,32 @@
+public class Main
+{
+
+  public static void main (String[]args)
+  {
+    int i = 0;
+    Scanner scanner = new Scanner (System.in);
+      System.out.println ("someone got killed");
+      System.out.println ("choose suspect and Enter the number:");
+      System.out.println ("suspect 1: guy: :");
+      System.out.println ("was seen running away from the guy who got killed:");
+      System.out.println ("suspect 2: guy's friend: :");
+      System.out.println ("was seen walking with the guy who got killed :");
+      System.out.println ("Enter number of suspect :");
+      i = scanner.nextInt ();
+
+    if (i == 1)
+      {
+	System.out.println ("Entered number is 1, you were wrong and got executed due to false blame");
+      }
+    else
+      {
+	System.out.
+	  println
+	  ("Entered number is 2, you got it right you got rewarded");
+
+      }
+    scanner.close ();
+  }
+}
+
+
